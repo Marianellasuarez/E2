@@ -1,0 +1,145 @@
+
+:root {
+    /* bg colors */
+    --background: #000000;
+    --primary: #26100D;
+    --secondary: #4C1F1A;
+    --btn-bg: #1e2c57;
+    --bg-white: #fff;
+    --nav-bg: #732E26;
+    /* text colors*/
+    --text-w: #eedddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background: var(--secondary);
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:65px;
+    padding:0 30px;
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+
+.logo {
+    height: 100%;
+
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: var(--text-w);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.cart-icon {
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    border: 2px solid var(--bg-white);
+    cursor: pointer;
+}
+
+main {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-white);
+    width: 100%;
+}
+
+/* section */
+#hero {
+    margin-top: 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.hero-info p {
+    font-size: 15px;
+    width: 70%;
+    color: var(--bg-white);
+}
+
+
+.hero-info a {
+    color: var(--text-white);
+    background-color: var(--btn-bg);
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align:center;
+}
+
+.hero-card {
+    width: 500px;
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+#text {
+    width:100% ;
+    height: 150px;
+    position: relative;
+    top:30px;
+    opacity:0.7;
+    background-color:var(--primary);
+    border-radius:10px;
+    text-align: center;
+    font-size: 26px;
+}
